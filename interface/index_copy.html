@@ -8,10 +8,6 @@
     <link href="css/style.css" rel="stylesheet" />
 
     <style type="text/css">
-        a:hover {
-            cursor:pointer;
-        }
-
         .navbar-brand small {
             display:block;
             font-size:12px;
@@ -82,36 +78,12 @@
           </ol>
         </nav>
 
+        
+
         <div class="row">
 
-          <div class="col-sm" style="margin: 0;">
-            <!--
-            <div class="row border-bottom"><div class="col"><h3>Current Pipeline</h3></div><div class="col">Teste</div></div>
-            -->
-            <div class="row border-bottom align-items-center" style="margin: 0;">
-
-              <div class="col-auto" style="margin: 0; padding: 0"><h3>Current Pipeline</h3></div>
-
-              <div class="col-auto">
-                
-                <label>
-                <input id="upload" type="file" style="display: none;"/>
-                <a class="icon-link">
-                  <i class="bi-upload" aria-hidden="true"><use xlink:href="#box-seam"></use></i>
-                  Load
-                </a>
-              </label>
-              </div>
-              <div class="col-auto">
-                <a class="icon-link" onclick="downloadPipeline();">
-                  <i class="bi-download" aria-hidden="true"><use xlink:href="#box-seam"></use></i>
-                  Save
-                </a>
-              </div>
-
-              
-            </div><div class="pb-2"></div>
-            <!--<h3 class="pb-2 border-bottom">Current Pipeline</h3>-->
+          <div class="col-sm">
+            <h3 class="pb-2 border-bottom">Current Pipeline</h3>
             <div class="list-group" id="currentPipeline"></div>
           </div>
 
@@ -126,6 +98,5 @@
       <script src="js/script.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
-      <script>updateBreadcrumbs();</script>
   </body>
 </html>
